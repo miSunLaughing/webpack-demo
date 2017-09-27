@@ -1,0 +1,30 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "server": "node ./server.js",
+    "dev": "node ./build/dev-server.js",
+    "build": "webpack  --config ./build/production.config.js",
+    "webpack-js": "webpack ./app/webpack-js.js ./dist/webpack-js.js",
+    "webpack-js-include-require": "webpack ./app/webpack-js-include-require.js ./dist/webpack-js-include-require.js"
+  },
+  "author": "zhongwenhao",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.26.2",
+    "express": "^4.15.4",
+    "transfer-webpack-plugin": "^0.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "open-browser-webpack-plugin": "0.0.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.19.1",
+    "webpack-visualizer-plugin": "^0.1.11"
+  }
+}
